@@ -1,4 +1,5 @@
 from .net import MultilayerNetwork,MultiplexNetwork
+from .transforms import subnet,aggregate,threshold
 import heapq,itertools
 
 def degs(net,degstype="distribution"):
@@ -90,7 +91,7 @@ def multiplex_degs(net,degstype="distribution"):
 
 def overlap_degs(net):
     """ Returns a dictionary of overlap degree distributions of each layer combination
-    of a multiplex network.
+    of an unweighted multiplex network.
 
     The overlap degree distribution will contain every layer combination, including the
     one where there is only a single layer, and the key of each of those is another
@@ -104,7 +105,7 @@ def overlap_degs(net):
     Parameters
     ----------
     net : MultiplexNetwork
-       A multiplex network object.
+       An unweighted multiplex network object (i.e. edge weigths equal to 1).
     """
     ol_degs = {}
     nodes = net.slices[0]
