@@ -1,0 +1,9 @@
+*.pyc
+__pycache__
+*~
+.DS_Store
+build/*
+dist/*
+
+doc/_build
+doc/autogen

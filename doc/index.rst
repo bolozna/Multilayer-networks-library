@@ -1,10 +1,17 @@
+``pymnet``: Multilayer Networks Library for Python
+==================================================
 
-Multilayer Networks Library for Python (Pymnet)
-===============================================
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   overview
+   tutorial/index
+   reference
 
 .. sidebar:: Multilayer networks
     
-   .. figure:: example1.png      
+   .. figure:: index-example.png      
        :height: 250 pt
        :align: left
 
@@ -39,19 +46,8 @@ Pymnet is a free library for analysing multilayer networks. Available for downlo
 **Documentation:**
 
 
-.. tabularcolumns:: |lcr|
-+------------------------------+--+-------------------------------+
-|:ref:`overview`               |  |:ref:`tutorial`                |
-+                              +  +                               +
-|*Overview of the design of*   |  |*Easy way of getting started*  |
-|*the library and benchmarks*  |  |*with various topics*          |
-+                              +  +                               +
-|                              |  |                               |
-+                              +  +                               +
-|:ref:`reference`              |  |                               |
-+                              +  +                               +
-|*Reference for all functions* |  |                               |
-|*and classes in the library*  |  |                               |
-+------------------------------+--+-------------------------------+
+* :ref:`overview`: *Overview of the design of the library and benchmarks* 
+* :ref:`reference`: *Reference for all functions and classes in the library* 
+* :ref:`tutorial`: *Easy way of getting started with various topics*        
 
 A `pdf version of this documentation <MultilayerNetworksLibrary.pdf>`_ is also available.

@@ -1,0 +1,57 @@
+[project]
+name = "pymnet"
+version = "0.1.0"
+description = "Multilayer network analysis library for Python"
+authors = [{name="Mikko Kivelä", email="mikko.kivela@iki.fi"}]
+requires-python = ">=3.8"
+license = {text = "GPLv3"}
+readme = "README.md"
+keywords = [
+    "Complex Networks", "Networks", "network",
+    "Graphs", "Graph Theory", "graph",
+    "Multilayer Networks", "multilayer network"
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: C++",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Information Analysis"
+]
+
+dependencies = [
+  "matplotlib >= 3.8.0",
+  "numpy >= 1.26.1",
+  "scipy >= 1.11.1",
+  "networkx >= 2.0, < 3.0"
+]
+
+[project.urls]
+homepage = "https://www.mkivela.com/pymnet/"
+documentation = "https://www.mkivela.com/pymnet/"
+repository = "https://github.com/bolozna/Multilayer-networks-library"
+bug-tracker = "https://github.com/bolozna/Multilayer-networks-library/issues"
+
+[project.optional-dependencies]
+
+[build-system]
+requires = [
+    "setuptools>=67",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tools.setuptools]
+packages = [
+	"pymnet", "pymnet.tests", "pymnet.visuals",
+	"pymnet.visuals.drawbackends", "pymnet.isomorphisms",
+	"pymnet.graphlets", "pymnet.sampling"
+]
